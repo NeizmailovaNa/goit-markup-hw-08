@@ -1,0 +1,130 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background-color: $white-color;
+}
+
+.header__wrapper {
+    @extend %flex;
+}
+
+.header__navigation {
+    @extend .header__wrapper;
+}
+
+.header__pages-link {
+    text-decoration: none
+}
+
+.header__contact {
+    @extend .header__pages-link;
+}
+
+.header__logo {
+    text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $blue-color;
+    font-family: $secondary-text-font;
+    @include text-decoration(normal, 700, 26px, 1.19, 0.03em);
+
+    &-dark {
+        color: $main-color;
+    }
+}
+
+.header__pages{
+    display: flex;
+    padding-left: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__pages {
+      overflow: hidden;
+    }
+} 
+
+.header__pages-list { 
+    .header__pages & + & {
+        margin-left: 50px;
+    }
+}
+
+.header__pages-link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $main-color;
+    @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
+    transition: color $animation-time $animation-cubic, visibility $animation-time;
+    
+    &:hover, 
+    &:focus {
+        color: $blue-color;
+    }
+}
+
+.header__pages-link--current {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        @include geometry(100%, 4px);
+        background: $blue-color;
+        @include border-radius(2px);
+        transform: translateY(28px); 
+    }
+}
+
+.header__contacts{
+    display: flex;
+    margin-left: auto;
+    color: $secondary-color;
+    @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
+}
+
+.header__contacts-list{
+    .header__contacts & + & {
+        margin-left: 50px;
+    }
+}
+
+.header__contact {
+    @extend %flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $secondary-color;
+    @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
+    transition: color $animation-time $animation-cubic, visibility $animation-time;
+
+    &:hover, 
+    &:focus {
+        color: $blue-color;
+    }
+}
+
+.header__icon-envelope {
+    fill: $secondary-color;
+    margin-right: 10px;
+    @include geometry(16px, 12px);
+    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+
+    .header__contact:hover &,
+    .header__contact:focus & {
+        fill: $blue-color;
+    }
+}
+
+.header__icon-smartphone {
+    fill: $secondary-color;
+    margin-right: 10px;
+    @include geometry(10px, 16px);
+    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+
+    .header__contact:hover &,
+    .header__contact:focus & {
+        fill: $blue-color;
+    }
+}

@@ -1,0 +1,22 @@
+@mixin text-decoration($font-style, $font-weight, $font-size, $line-height, $letter-spacing) {
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin geometry($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin bordered($border-color, $border-radius) {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+}
+
+@mixin border-radius($border:none, $border-radius) {
+    border: $border;
+    border-radius: $border-radius;
+}
