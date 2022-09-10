@@ -498,6 +498,8 @@ img {
   background-color: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
 }
 @media screen and (max-width: 767px) {
   .footer-email__send-button {
