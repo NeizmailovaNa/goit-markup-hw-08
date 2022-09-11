@@ -1,0 +1,101 @@
+.team {
+    background-color: $team-bgc;
+}
+
+.team__title {
+    text-align: center;
+    color: $main-color;
+    @media screen and (max-width: 767px) {
+        @include text-decoration(normal, 700, 28px, 1.18, 0.03em);
+        margin-bottom: 30px;
+    } 
+    @media screen and (min-width: 1600px) {
+        @include text-decoration(normal, 700, 36px, 1.17, 0.03em); 
+        margin-bottom: 50px;
+    } 
+}
+
+.team__list {
+    @media screen and (min-width: 1600px) {
+        display: flex;
+    } 
+    
+}
+
+.team__item {
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1600px) {
+        margin-right: 30px;
+    } 
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.team__participant-name {
+    margin-bottom: 10px;
+    text-align: center;
+    @include text-decoration(normal, 500, 16px, 1.19, 0.03em);
+    color: $main-color;
+}
+
+.team__profession{
+    text-align: center;
+    @include text-decoration(normal, 400, 16px, 1.19, 0.03em);
+    color: $secondary-color;
+}
+
+.team__wrapper {
+    padding-top: 30px;
+    
+    @media screen and (max-width: 767px) {
+        padding-bottom: 24px;
+    } 
+    @media screen and (min-width: 1600px) {
+        padding-bottom: 30px;
+    } 
+}
+
+.participant-networks {
+    @extend %flex;
+    margin-top: 16px;
+}
+
+.participant-networks__list {
+    @extend %flex;
+    margin-right: 10px;
+  
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.participant-networks__link {
+    @extend %flex;
+    @include geometry(44px, 44px);
+    @include border-radius(none, 50px);
+    transition: background-color $animation-time $animation-cubic, visibility $animation-time;
+
+    &:hover,
+    &:focus {
+        background-color: $blue-color;
+    }
+}
+
+.participant-networks__svg {
+    @include geometry(20px, 20px);
+    fill: $icons-color;
+    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+
+    .participant-networks__link:hover &,
+    .participant-networks__link:focus & {
+        fill: $white-color;
+    }
+}

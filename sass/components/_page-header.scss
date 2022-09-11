@@ -27,7 +27,6 @@
 
 .header__logo {
     text-decoration: none;
-    
     color: $blue-color;
     font-family: $secondary-text-font;
     @include text-decoration(normal, 700, 26px, 1.19, 0.03em);
@@ -36,10 +35,9 @@
         color: $main-color;
     }
     @media screen  and (max-width: 767px) {
+        @include text-decoration(normal, 700, 24px, 1.17, 0.03em);
         padding-top: 16px;
         padding-bottom: 16px;
-        font-size: 24px;
-        line-height: 1.17;
     }
     @media screen  and (min-width: 1600px) {
         margin-right: 93px;

@@ -55,9 +55,7 @@
         }
     }
     @media screen and (max-width: 767px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         margin-bottom: 8px;
     }
 }
@@ -80,15 +78,18 @@
 }
 
 .footer-networks__title {
-    display: flex;
     margin-bottom: 20px;
     @include text-decoration(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $white-color;
     @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 1600px) {
+        display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } 
 }
 
 .footer-networks__unodered-list {
@@ -141,9 +142,7 @@
     text-transform: uppercase;
     color: $white-color;
     @media screen and (max-width: 767px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
 }
 
