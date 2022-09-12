@@ -3,8 +3,22 @@
     padding-bottom: 60px;
     @include text-decoration(normal, 400, 14px, 1.71, 0.03em);
     background: $footer-bgc; 
+    @media screen and (min-width: 1600px) {
+        display: flex;
+    }
 }
 
+.footer__flex {
+    @media screen and (min-width: 768px) and (max-width: 1599px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (min-width: 1600px) {
+        display: flex;
+
+    }
+}
 .footer__container {
     @media screen and (min-width: 1600px) {
         display: flex;
@@ -32,7 +46,7 @@
     &-light {
         color: $white-color;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1599px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +68,7 @@
             margin-bottom: 60px;
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 468px) and (max-width: 1599px) {
         text-align: center;
         margin-bottom: 8px;
     }
@@ -72,6 +86,9 @@
 
 /**footer-networks**/
 .footer-networks {
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+        margin-left: 165px;
+    }
     @media screen and (min-width: 1600px) {
         margin-left: 70px;
     }  
@@ -82,7 +99,7 @@
     @include text-decoration(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $white-color;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1599px) {
         text-align: center;
     }
     @media screen and (min-width: 1600px) {
@@ -94,7 +111,7 @@
 
 .footer-networks__unodered-list {
     display: flex;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1599px) {
         justify-content: center;
         align-items: center;
         margin-bottom: 60px;
@@ -132,7 +149,7 @@
 .footer-email {
     @media screen and (min-width: 1600px) {
         margin-left: 93px;
-    }  
+    } 
 }
 
 .footer-email__title {
@@ -141,7 +158,10 @@
     @include text-decoration(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $white-color;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 468px) and (max-width: 1599px) {
+        margin-top: 60px;
+    }
+    @media screen and (max-width: 1599px) {
         text-align: center;
     }
 }
@@ -165,6 +185,13 @@
         width: 100%;
         margin-bottom: 20px;
     } 
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+        display: block;
+        width: 450px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
     @media screen and (min-width: 1600px) {
         margin-right: 12px;
     } 
@@ -180,7 +207,7 @@
     background-color: $blue-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     @include border-radius(none, 4px);
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1599px) {
         margin-left: auto;
         margin-right: auto;
     } 
