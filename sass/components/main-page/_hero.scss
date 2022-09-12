@@ -7,6 +7,10 @@
         padding-top: 118px;
         padding-bottom: 118px;
     }
+    @media screen and (max-width: 1599px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    } 
     @media screen and (min-width: 1600px) {
        max-width: 1600px;
        padding-top: 200px;
@@ -28,6 +32,9 @@
     @media screen and (max-width: 767px) {
         @include text-decoration(normal, 900, 26px, 1.62, 0.06);
     } 
+    @media screen and (max-width: 1599px) {
+        @include text-decoration(normal, 900, 26px, 1.62, 0.06);
+    } 
     @media screen and (min-width: 1600px) {
         @include text-decoration(normal, 900, 44px, 1.36, 0.06);
     } 
@@ -40,6 +47,10 @@
     @include text-decoration(normal, 700, 16px, 1.87, 0.06);
     @include border-radius(none, 4px);
     @media screen and (max-width: 767px) {
+        margin-top: 30px;
+        padding: 10px 24px 10px 24px;
+    }
+    @media screen and (max-width: 1599px) {
         margin-top: 30px;
         padding: 10px 24px 10px 24px;
     }

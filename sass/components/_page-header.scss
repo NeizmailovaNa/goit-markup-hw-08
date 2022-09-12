@@ -49,6 +49,9 @@
 .header__pages{
     display: flex;
     padding-left: 0px;
+    @media screen and (max-width: 1599px) {
+        margin-left: 88px;
+    } 
 }
 
 .header__pages-list { 
@@ -59,12 +62,10 @@
 
 .header__pages-link {
     position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: $main-color;
     @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
     transition: color $animation-time $animation-cubic, visibility $animation-time;
-    
+   
     &:hover, 
     &:focus {
         color: $blue-color;
@@ -79,16 +80,19 @@
         position: absolute;
         display: block;
         @include geometry(100%, 4px);
+        @include border-radius(none, 2px);
         background: $blue-color;
         transform: translateY(28px); 
     }
 }
 
 .header__contacts{
-    display: flex;
     margin-left: auto;
     color: $secondary-color;
     @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
+    @media screen and (min-width: 1600px) {
+        display: flex;
+    } 
 }
 
 .header__contacts-list{
@@ -96,24 +100,41 @@
             display: none;
         }
     .header__contacts & + & {
-        margin-left: 50px;
+        @media screen and (min-width: 1600px) {
+            margin-left: 50px;
+        } 
+        
     }
 }
 
 .header__contact {
-    @extend %flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: $secondary-color;
     @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
     transition: color $animation-time $animation-cubic, visibility $animation-time;
-
+    @media screen and (max-width: 1599px) {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    } 
+    @media screen and (min-width: 1600px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    } 
     &:hover, 
     &:focus {
         color: $blue-color;
     }
 }
 
+.--phone {
+    @media screen and (max-width: 1599px) {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+}
 .header__icon-envelope {
     fill: $secondary-color;
     margin-right: 10px;

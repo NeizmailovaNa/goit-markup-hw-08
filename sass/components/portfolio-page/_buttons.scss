@@ -34,10 +34,45 @@
     } 
 
     & .buttons-area__list + .buttons-area__list {
-     margin-left: 8px;
+        @media screen and (min-width: 1600px) {
+            margin-left: 8px;
+        }
     }
 }
 
+.buttons-area__all {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+}
+
+.buttons-area__web {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+        margin-left: 8px;
+    }
+}
+
+.buttons-area__design{
+    @media screen and (max-width: 767px) {
+        margin-right: 8px;
+        margin-bottom: 0;
+    } 
+}
+
+.buttons-area__apps {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+        margin-left: 8px;
+        margin-right: 70px;
+    }  
+}
+
+.buttons-area__marketing {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+    } 
+}
 .buttons-area__all {
     padding: 6px 22px 6px 22px;
     color: $main-color;
