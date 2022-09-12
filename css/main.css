@@ -361,6 +361,10 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02;
 }
+.mob-menu__pages-list:hover .mob-menu__pages-link, .mob-menu__pages-list:focus .mob-menu__pages-link {
+  color: #2196F3;
+  cursor: pointer;
+}
 
 .mob-menu__phone {
   display: inline-block;
