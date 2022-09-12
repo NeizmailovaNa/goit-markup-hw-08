@@ -667,7 +667,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 354px;
+    width: 350px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -686,6 +686,11 @@ img {
 }
 @media screen and (min-width: 1600px) {
   .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-right: 30px;
   }
 }
@@ -750,7 +755,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .features__box {
-    width: 354px;
     height: 120px;
   }
 }
@@ -764,7 +768,7 @@ img {
 .work, .work__container {
   padding-top: 0px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1599px) {
   .work, .work__container {
     display: none;
   }
@@ -838,6 +842,16 @@ img {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .team__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .team__title {
     font-style: normal;
@@ -849,6 +863,21 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1600px) {
   .team__list {
     display: -webkit-box;
@@ -868,9 +897,20 @@ img {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .team__item {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 .team__item:last-child {
@@ -914,6 +954,7 @@ img {
 
 .participant-networks {
   margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .participant-networks__list {
