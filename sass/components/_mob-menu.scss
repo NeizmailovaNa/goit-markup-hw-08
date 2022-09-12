@@ -1,0 +1,137 @@
+.header__menu-open {
+    @media screen and (max-width: 767px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        background-color: $white-color;
+        border: none;
+    } 
+    @media screen and (min-width: 768px) {
+        display: none;
+    } 
+}
+.header__menu-open-icon {
+    .header__menu-open:hover &,
+    .header__menu-open:focus & {
+            fill: $blue-color;
+            cursor: pointer;
+        }
+}
+
+.mob-menu {
+    position: fixed;
+    background-color: $white-color;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transition: opacity $animation-time $animation-cubic, visibility $animation-time;
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+}
+
+.mob-menu__close {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        background-color: $white-color;
+        border: none;
+    } 
+    @media screen and (min-width: 768px) {
+        display: none;
+    } 
+}
+
+
+.mob-menu__close-icon {
+    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+    .mob-menu__close:hover  &,
+    .mob-menu__close:focus  & {
+        fill: $blue-color;
+        cursor: pointer;
+    }
+}
+.mob-menu__container {
+    padding: 0px 40px 48px 40px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mob-menu__pages-list {
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.mob-menu__pages-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $main-color;
+    @include text-decoration(normal, 500, 40px, 1.18, 0.02);
+}
+
+.mob-menu__phone {
+    display: inline-block;
+    text-decoration: none;
+    color: $blue-color;
+    @include text-decoration(normal, 500, 34px, 1.18, 0.02);
+    margin-bottom: 32px;
+}
+
+.mob-menu__mail {
+    display: inline-block;
+    text-decoration: none;
+    color: $secondary-color;
+    @include text-decoration(normal, 500, 24px, 1.17, 0.02);
+}
+
+.mob-menu__networks {
+    padding-bottom: 48px;
+    &:last-child {
+        margin-right: 0px;
+    }  
+}
+.mob-menu__networks-list {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    &::after {
+        content: "";
+        position: absolute;
+        @include geometry(1px, 22px);
+        background-color: rgba(33, 33, 33, 0.2);
+        @include border-radius(none, 0px);
+        transform: translateX(10px); 
+    }
+    &:last-child::after {
+        content: "";
+        display: none;
+    }  
+    &:first-child {
+        margin-left: 0px;
+    }
+    &:last-child {
+        margin-right: 0px;
+    }    
+}
+.mob-menu__networks-item {
+    text-decoration: none;
+    color: $blue-color;
+    @include text-decoration(normal, 500, 18px, 1.22, 0.02);
+   
+}
+
