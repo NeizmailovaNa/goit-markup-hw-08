@@ -449,12 +449,10 @@ img {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 767px;
-    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/header-img-mob.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/header-img-mob.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header-img-mob.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-img-mob.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -462,12 +460,10 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    max-width: 1199px;
-    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/header-img-tab.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/header-img-tab.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header-img-tab.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-img-tab.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -475,11 +471,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/background-photo.jpg");
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/background-photo.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/background-photo.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/background-photo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -844,16 +839,36 @@ img {
 
 .section {
   background-color: #FFFFFF;
-  padding: 60px 0px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 60px 0px 60px 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
     padding: 60px 0px 30px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0px;
+    padding: 94px 0px 94px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    padding: 60px 0px 60px 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    padding: 60px 0px 30px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0px 0px 0px;
   }
 }
 
