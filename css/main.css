@@ -452,8 +452,8 @@ img {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/background-photo.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/background-photo.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/header-img-mob.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/header-img-mob.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -461,15 +461,16 @@ img {
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("./images/bg-photo-2.jpg");
+    background-image: url("../../../images/header-img-mob-2.jpg");
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/header-img-tab.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/header-img-tab.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/header-img-tab.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/header-img-tab.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -477,15 +478,15 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("./images/header-img-tab-2.jpg");
+    background-image: url("../../../images/header-img-tab-2.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/background-photo.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/background-photo.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/background-photo.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/background-photo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -493,7 +494,7 @@ img {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("./images/bg-photo-2.jpg");
+    background-image: url("../../../images/bg-photo-2.jpg");
   }
 }
 
@@ -586,6 +587,9 @@ img {
 
 .modal {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -596,25 +600,20 @@ img {
 }
 @media screen and (max-width: 467px) {
   .modal {
-    width: 100%;
+    min-height: 609px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 468px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     min-height: 609px;
-    padding: 40px;
-    top: 50%;
-    left: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
-    padding: 40px;
-    top: 50%;
-    left: 50%;
   }
 }
 
