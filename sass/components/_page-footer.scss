@@ -3,24 +3,24 @@
     padding-bottom: 60px;
     @include text-decoration(normal, 400, 14px, 1.71, 0.03em);
     background: $footer-bgc; 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
     }
 }
 
 .footer__flex {
-    @media screen and (min-width: 768px) and (max-width: 1599px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
 
     }
 }
 .footer__container {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: flex-start;
         align-items: baseline;
@@ -29,7 +29,7 @@
 
 .footer__contacts{
     color: $transparency-white-color;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: inline-block;
         width: 231px;
     }
@@ -46,7 +46,7 @@
     &-light {
         color: $white-color;
     }
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -68,7 +68,7 @@
             margin-bottom: 60px;
         }
     }
-    @media screen and (min-width: 468px) and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
         margin-bottom: 8px;
     }
@@ -86,10 +86,10 @@
 
 /**footer-networks**/
 .footer-networks {
-    @media screen and (min-width: 768px) and (max-width: 1599px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: 165px;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 70px;
     }  
 }
@@ -99,19 +99,17 @@
     @include text-decoration(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $white-color;
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
-        justify-content: center;
-        align-items: center;
     } 
 }
 
 .footer-networks__unodered-list {
     display: flex;
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         justify-content: center;
         align-items: center;
         margin-bottom: 60px;
@@ -147,7 +145,7 @@
 
 /**footer-email**/
 .footer-email {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 93px;
     } 
 }
@@ -158,16 +156,16 @@
     @include text-decoration(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $white-color;
-    @media screen and (min-width: 468px) and (max-width: 1599px) {
+    @media screen and (min-width: 468px) and (max-width: 1199px) {
         margin-top: 60px;
     }
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
 }
 
 .footer-email__wrapper {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -185,14 +183,14 @@
         width: 100%;
         margin-bottom: 20px;
     } 
-    @media screen and (min-width: 768px) and (max-width: 1599px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
         width: 450px;
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
     } 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-right: 12px;
     } 
 
@@ -207,7 +205,7 @@
     background-color: $blue-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     @include border-radius(none, 4px);
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
     } 

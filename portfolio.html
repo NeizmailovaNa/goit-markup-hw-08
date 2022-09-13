@@ -25,8 +25,8 @@
          <a href="./index.html" class="logo header__logo">Web<span class="header__logo-dark">Studio</span></a>
 
            <ul class="header__pages">
-              <li class="header__pages-list"><a href="" class="header__pages-link header__pages-link--current">Студія</a></li>
-              <li class="header__pages-list"><a href="./portfolio.html" class="header__pages-link">Портфоліо</a></li>
+              <li class="header__pages-list"><a href="./index.html" class="header__pages-link">Студія</a></li>
+              <li class="header__pages-list"><a href="./portfolio.html" class="header__pages-link header__pages-link--current">Портфоліо</a></li>
               <li class="header__pages-list"><a href="" class="header__pages-link">Контакти</a></li>
            </ul>     
         </nav> 
@@ -47,6 +47,55 @@
                 +38 096 111 11 11</a>
            </li>
         </ul>
+        <div>
+         <button class="header__menu-open" data-menu-open>
+           <svg class="header__menu-open-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+           </svg>
+         </button>
+         </div>
+         
+         <div class="mob-menu is-hidden" data-menu>
+           <button class="mob-menu__close" data-menu-close>
+              <svg class="mob-menu__close-icon" width="40px" height="40px">
+               <use href="./images/icons.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+            <div class="mob-menu__container">
+            <nav class="mob-menu__navigation">
+                <ul class="mob-menu__pages">
+                   <li class="mob-menu__pages-list"><a href="./index.html" class="mob-menu__pages-link">Студія</a></li>
+                   <li class="mob-menu__pages-list"><a href="./portfolio.html" class="mob-menu__pages-link">Портфоліо</a></li>
+                   <li class="mob-menu__pages-list"><a href="" class="mob-menu__pages-link">Контакти</a></li>
+                </ul>     
+             </nav> 
+   
+             <ul class="mob-menu__contacts">
+                <li class="mob-menu__contacts-list">
+                   <a href="tel:+380991111111" class="mob-menu__phone">
+                     +38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu__contacts-list">
+                   <a href="mailto:info@example.com" class="mob-menu__mail">
+                   info@devstudio.com</a>
+                </li>
+             </ul>
+
+             <ul class="mob-menu__networks">
+              <li class="mob-menu__networks-list">
+                 <a href="" class="mob-menu__networks-item">Instagram</a>
+              </li>
+              <li class="mob-menu__networks-list">
+                 <a href="" class="mob-menu__networks-item">Twitter</a>
+              </li>
+              <li class="mob-menu__networks-list">
+                 <a href="" class="mob-menu__networks-item --instagram">Facebook</a>
+              </li>
+              <li class="mob-menu__networks-list">
+                 <a href="" class="mob-menu__networks-item --linkedin">LinkedIn</a>
+              </li>
+             </ul>
+           </div>
       </div>
   </header>
 
@@ -75,7 +124,7 @@
                         "
                         src="./images/portfolio.images/Технокряк.jpg" 
                         alt=""
-                        width="370px"
+                        width="100%"
                         />
                     <p class="examples__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -100,7 +149,7 @@
                         "
                         src="./images/portfolio.images/Постер-New-Orlean-vs-Golden-Star.jpg" 
                         alt=""
-                        width="370px"
+                        width="100%"
                         />
                    <p class="examples__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -125,7 +174,7 @@
                         "
                         src="./images/portfolio.images/Ресторан-Seafood.jpg" 
                         alt=""
-                        width="370px"
+                        width="100%"
                      />
                    <p class="examples__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -150,7 +199,7 @@
                         "
                         src="./images/portfolio.images/Проект-Prime.jpg" 
                         alt=""
-                        width="370px"
+                        width="100%"
                      />
                    <p class="examples__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -175,7 +224,7 @@
                         "
                         src="./images/portfolio.images/Проект-Boxes.jpg" 
                         alt=""
-                        width="370px"
+                        width="100%"
                      />
                    
                    <p class="examples__description">
@@ -201,7 +250,7 @@
                      "
                      src="./images/portfolio.images/Inspiration--has-no-Borders.jpg" 
                      alt=""
-                     width="370px"
+                     width="100%"
                   />
                    
                    <p class="examples__description">
@@ -227,7 +276,7 @@
                      "
                      src="./images/portfolio.images/Издание-Limited-Edition.jpg" 
                      alt=""
-                     width="370px"
+                     width="100%"
                   />
                    
                    <p class="examples__description">
@@ -254,7 +303,7 @@
                         "
                         src="./images/portfolio.images/Проект-LAB.jpg" 
                         alt=""
-                        width="370px"
+                        width="100%"
                      />
                    
                    <p class="examples__description">
@@ -280,7 +329,7 @@
                      "
                      src="./images/portfolio.images/Growing-Business.jpg" 
                      alt=""
-                     width="370px"
+                     width="100%"
                   />
                   
                    <p class="examples__description">
@@ -373,7 +422,8 @@
                 </div> 
           </section>
       </div>
-     </footer>      
+     </footer> 
+     <script src="./js/menu.js"></script>    
  </body>
  </html>
  

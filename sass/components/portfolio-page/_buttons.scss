@@ -3,7 +3,7 @@
     @media screen and (max-width: 767px) {
         padding: 60px 0px;
     } 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         padding: 94px 0px;
     } 
 }
@@ -12,7 +12,7 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
     } 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 50px;    
     } 
 }
@@ -25,62 +25,35 @@
     display: flex;
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
+        
         margin-bottom: 40px;
     } 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         justify-content: center;
         align-items: center;
         margin-top: 60px;
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 50px; 
         justify-content: center;
         align-items: center;   
     } 
-
-    & .buttons-area__list + .buttons-area__list {
+    
+    & .buttons-area__list {
+        @media screen and (max-width: 767px) {
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
         @media screen and (min-width: 768px) {
             margin-left: 8px;
         }
     }
+ 
 }
 
 .buttons-area__all {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 15px;
-    }
-}
-
-.buttons-area__web {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 15px;
-        margin-left: 8px;
-    }
-}
-
-.buttons-area__design{
-    @media screen and (max-width: 767px) {
-        margin-right: 8px;
-        margin-bottom: 0;
-    } 
-}
-
-.buttons-area__apps {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 15px;
-        margin-left: 8px;
-        margin-right: 70px;
-    }  
-}
-
-.buttons-area__marketing {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 0;
-    } 
-}
-.buttons-area__all {
-    padding: 6px 22px 6px 22px;
+    padding: 6px 25px 6px 25px;
     color: $main-color;
     @include text-decoration(normal, 500, 16px, 1.62, 0.03em);
     background-color: #F5F4FA;
