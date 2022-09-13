@@ -1109,7 +1109,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    width: 270px;
+    width: 354px;
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -1276,12 +1276,28 @@ img {
 }
 
 .clients__link {
-  width: 170px;
-  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms, border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms, border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+}
+@media screen and (max-width: 767px) {
+  .clients__link {
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   border: 1px solid #2196F3;

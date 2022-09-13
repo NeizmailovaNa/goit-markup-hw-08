@@ -56,10 +56,18 @@
 
 .clients__link  {
     @extend %flex;
-    @include geometry(170px, 92px);
+    
     @include bordered($icons-color, 4px);
     transition: border $animation-time $animation-cubic, visibility $animation-time, border-radius $animation-time $animation-cubic, visibility $animation-time;
-
+    @media screen and (max-width: 767px) {
+        @include geometry(210px, 92px);
+    } 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include geometry(226px, 92px);
+    } 
+    @media screen and (min-width: 1200px) {
+        @include geometry(170px, 92px);
+    } 
     &:hover,
     &:focus {
         @include bordered($blue-color, 4px);
