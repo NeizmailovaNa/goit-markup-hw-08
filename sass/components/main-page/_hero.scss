@@ -2,11 +2,8 @@
 .hero {
     text-align: center;
     margin-left: auto;
-    margin-right: auto;    
-}
-
-@media screen and (max-width: 767px)  {
-            .hero {
+    margin-right: auto;
+        @media screen and (max-width: 767px) {
             max-width: 767px;
             padding-top: 118px;
             padding-bottom: 118px;
@@ -17,10 +14,8 @@
             background-position: center;
             background-size: cover;
         }
-    }
     
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-            .hero {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             max-width: 1199px;
             padding-top: 118px;
             padding-bottom: 118px;
@@ -31,16 +26,14 @@
             background-position: center;
             background-size: cover;
         }
-}
     
-@media screen and (min-width: 1200px) {
-             .hero {
+        @media screen and (min-width: 1200px) {
             max-width: 1600px;
             padding-top: 200px;
             padding-bottom: 200px; 
 
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('./images-hero/background-photo.jpg');
+            url('./images-hero/bg-photo-2.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
